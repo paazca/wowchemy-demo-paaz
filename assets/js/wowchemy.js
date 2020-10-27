@@ -624,13 +624,13 @@
     let defaultOptions = {fileExt: false, loop: false, captionsData: 'data-caption', history: false};
     let lbImgs = Array.from(document.querySelectorAll('a[data-fancybox]'));
     while (lbImgs.length > 0) {
-      let fbData = lbImgs[0].getAttribute(data-fancybox);
+      let fbData = lbImgs[0].getAttribute('data-fancybox');
       if (fbData == "") {
         new SimpleLightbox(lbImgs[0], defaultOptions);
         lbImgs.shift();
       } else {
-        new SimpleLightbox(lbImgs.filter(img => img.getAttribute(data-fancybox) == fbData), defaultOptions);
-        lbImgs = lbImgs.filter(img => img.getAttribute(data-fancybox) != fbData);
+        new SimpleLightbox(lbImgs.filter(img => img.getAttribute('data-fancybox') == fbData), defaultOptions);
+        lbImgs = lbImgs.filter(img => img.getAttribute('data-fancybox') != fbData);
       }
     }
     
