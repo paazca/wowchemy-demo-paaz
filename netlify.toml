@@ -26,6 +26,6 @@
     Content-Type = "application/rss+xml"
 
 [[headers]]
-  for = "https://wowchemy-demo-paaz.netlify.app/*"
+  for = "/*"
    [headers.values]
     X-Robots-Tag = "noindex"
