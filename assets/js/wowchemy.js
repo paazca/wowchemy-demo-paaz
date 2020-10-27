@@ -621,7 +621,7 @@
     });
     
     // Initialize lightbox
-    let defaultOptions = {fileExt: false, loop: false, captionsData: 'data-caption', history: false, 
+    let defaultOptions = {fileExt: false, captionsData: 'data-caption', history: false, 
                           rtl: ["ar", "fa", "he", "ur"].indexOf(document.documentElement.lang) != -1};
     let lbImgs = Array.from(document.querySelectorAll('a[data-fancybox]'));
     while (lbImgs.length > 0) {
