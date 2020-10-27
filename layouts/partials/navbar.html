@@ -29,14 +29,14 @@
     {{end}}
 
     {{ if site.Menus.main }}
-    <button type="button" class="navbar-toggler compensate-for-scrollbar" data-toggle="collapse"
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="{{ i18n "toggle_navigation" }}">
     <span><i class="fas fa-bars"></i></span>
     </button>
     {{ end }}
 
     {{if $show_logo}}
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none compensate-for-scrollbar">
       <a class="navbar-brand" href="{{ "/" | relLangURL }}">
       {{- if $has_logo -}}
         <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}">
