@@ -621,7 +621,7 @@
     });
     
     // Initialize lightbox
-    let defaultOptions = {fileExt: false, captionsData: 'data-caption', captionSelector: 'self',
+    let defaultOptions = {fileExt: false, captionsData: 'data-caption', captionSelector: 'self', captionPosition: 'outside',
                           rtl: document.documentElement.dir == "rtl"};
     let lbImgs = Array.from(document.querySelectorAll('a[data-fancybox]'));
     while (lbImgs.length > 0) {
