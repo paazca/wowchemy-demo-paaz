@@ -313,7 +313,20 @@
 
       // Remove search query params from URL as user has finished searching.
       removeQueryParamsFromUrl();
+
+      // Prevent fixed positioned elements (e.g. navbar) moving due to scrollbars.
+      $('#fancybox-style-noscroll').remove();
     } else {
+      // Prevent fixed positioned elements (e.g. navbar) moving due to scrollbars.
+      if (!$('#fancybox-style-noscroll').length && document.body.scrollHeight > window.innerHeight) {
+        $('head').append(
+          '<style id="fancybox-style-noscroll">.compensate-for-scrollbar{margin-right:' +
+          (window.innerWidth - document.documentElement.clientWidth) +
+          'px;}</style>'
+        );
+        $('body').addClass('compensate-for-scrollbar');
+      }
+
       // Show search modal.
       $('body').addClass('searching');
       $('.search-results').css({opacity: 0, visibility: 'visible'}).animate({opacity: 1}, 200);
