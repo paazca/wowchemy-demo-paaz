@@ -38,3 +38,9 @@ gallery_item:
 
 ## Single image
 {{< figure src="theme-apogee.png" title="Single image">}}
+
+## SVG
+{{< figure src="SVG_logo_h.svg" title="SVG">}}
+
+## External SVG
+{{< figure src="https://upload.wikimedia.org/wikipedia/commons/6/67/Firefox_Logo%2C_2017.svg" title="External SVG">}}
