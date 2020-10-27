@@ -622,7 +622,7 @@
     
     // Initialize lightbox
     let defaultOptions = {fileExt: false, captionsData: 'data-caption', history: false, 
-                          rtl: ["ar", "fa", "he", "ur"].indexOf(document.documentElement.lang) != -1};
+                          rtl: document.documentElement.dir == "rtl"};
     let lbImgs = Array.from(document.querySelectorAll('a[data-fancybox]'));
     while (lbImgs.length > 0) {
       let fbData = lbImgs[0].getAttribute('data-fancybox');
