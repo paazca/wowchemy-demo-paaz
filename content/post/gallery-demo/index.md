@@ -32,9 +32,9 @@ gallery_item:
 {{< gallery album="gallery1" >}}
 
 ## Grouped images
-{{< figure src="theme-ocean.png" title="A caption" group="group1">}}
-{{< figure src="theme-dark.png" title="Another caption" group="group1">}}
-{{< figure src="theme-apogee.png" title="another2 caption" group="group1">}}
+{{< figure src="theme-ocean.png" title="A caption" lightbox-group="group1">}}
+{{< figure src="theme-dark.png" title="Another caption" lightbox-group="group1">}}
+{{< figure src="theme-apogee.png" title="another2 caption" lightbox-group="group1">}}
 
 ## Single image
 {{< figure src="theme-apogee.png" title="Single image">}}
