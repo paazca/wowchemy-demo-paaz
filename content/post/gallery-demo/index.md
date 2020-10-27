@@ -4,10 +4,7 @@
 title: "Gallery Demo"
 subtitle: ""
 summary: ""
-authors: []
-tags: []
-categories: []
-date: date: 2020-10-06T17:12:01.815Z
+date: 2020-10-06T17:12:01.815Z
 featured: false
 draft: false
 
