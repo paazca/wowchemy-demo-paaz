@@ -25,5 +25,19 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
----
 
+gallery_item:
+- album: gallery1
+  image: theme-ocean.png
+  caption: Write your image caption here
+---
+## Gallery
+{{< gallery album="gallery1" >}}
+
+## Grouped images
+{{< figure src="theme-ocean.png" title="A caption" group="group1">}}
+{{< figure src="theme-dark.png" title="Another caption" group="group1">}}
+{{< figure src="theme-apogee.png" title="another2 caption" group="group1">}}
+
+## Single image
+{{< figure src="theme-apogee.png" title="Single image">}}
