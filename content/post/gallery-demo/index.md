@@ -31,13 +31,16 @@ gallery_item:
 ## Gallery
 {{< gallery album="gallery1" >}}
 
+## Second Gallery
+{{< gallery album="gallery2" >}}
+
 ## Grouped images
 {{< figure src="theme-ocean.png" title="A caption" lightbox-group="group1">}}
 {{< figure src="theme-dark.png" title="Another caption" lightbox-group="group1">}}
 {{< figure src="theme-apogee.png" title="another2 caption" lightbox-group="group1">}}
 
-## Single image
-{{< figure src="theme-apogee.png" title="Single image">}}
+## Single image with markdown test
+{{< figure src="theme-apogee.png" title="**test** caption :smiley:">}}
 
 ## SVG
 {{< figure src="SVG_logo_h.svg">}}
